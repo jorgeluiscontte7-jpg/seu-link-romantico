@@ -57,13 +57,34 @@
   </div>
 
   <!-- Música -->
-  <iframe
-    width="0"
-    height="0"
-    src="https://www.youtube.com/embed/qBDItgjy350?autoplay=1&loop=1&playlist=qBDItgjy350"
-    frameborder="0"
-    allow="autoplay">
-  </iframe>
+<button id="playBtn" onclick="playMusic()" style="
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+">
+▶ Tocar música
+</button>
+
+<iframe
+  id="music"
+  width="0"
+  height="0"
+  src="https://www.youtube.com/embed/qBDItgjy350?loop=1&playlist=qBDItgjy350"
+  frameborder="0"
+  allow="autoplay">
+</iframe>
+
+<script>
+function playMusic() {
+  const iframe = document.getElementById("music");
+  iframe.src += "&autoplay=1";
+  document.getElementById("playBtn").style.display = "none";
+}
+</script>
+
 
   <footer>Com amor, para sempre 💕</footer>
 
@@ -86,3 +107,4 @@
 
 </body>
 </html>
+
