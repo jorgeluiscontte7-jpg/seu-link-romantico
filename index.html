@@ -46,47 +46,43 @@
 
 <body>
 
-<h1>❤️ Nosso Amor ❤️</h1>
-<p>Meu lugar favorito é você.</p>
+  <h1>❤️ Nosso Amor ❤️</h1>
+  <p>Meu lugar favorito é você.</p>
 
-<div class="slideshow">
-  <div class="slide"><img src="foto1.jpg"></div>
-  <div class="slide"><img src="foto2.jpg></div>
-  <div class="slide"><img src="foto3.jpg"></div>
-  <div class="slide"><img src="foto4.jpg"></div>
-</div>
+  <div class="slideshow">
+    <div class="slide"><img src="foto1.jpg" alt="Foto 1"></div>
+    <div class="slide"><img src="foto2.jpg" alt="Foto 2"></div>
+    <div class="slide"><img src="foto3.jpg" alt="Foto 3"></div>
+    <div class="slide"><img src="foto4.jpg" alt="Foto 4"></div>
+  </div>
 
-<!-- Música -->
-<iframe
-  width="0"
-  height="0"
-  src="https://www.youtube.com/embed/qBDItgjy350?autoplay=1&loop=1&playlist=qBDItgjy350"
-  frameborder="0"
-  allow="autoplay">
-</iframe>
+  <!-- Música -->
+  <iframe
+    width="0"
+    height="0"
+    src="https://www.youtube.com/embed/qBDItgjy350?autoplay=1&loop=1&playlist=qBDItgjy350"
+    frameborder="0"
+    allow="autoplay">
+  </iframe>
 
-<footer>Com amor, para sempre 💕</footer>
+  <footer>Com amor, para sempre 💕</footer>
 
-<script>
-let index = 0;
-const slides = document.getElementsByClassName("slide");
+  <script>
+    let index = 0;
+    const slides = document.getElementsByClassName("slide");
 
-function showSlides() {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  index++;
-  if (index > slides.length) { index = 1 }
-  slides[index - 1].style.display = "block";
-  setTimeout(showSlides, 3500);
-}
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      index++;
+      if (index > slides.length) { index = 1; }
+      slides[index - 1].style.display = "block";
+      setTimeout(showSlides, 3500);
+    }
 
-showSlides();
-</script>
+    showSlides();
+  </script>
 
 </body>
 </html>
-
-
- 
-
